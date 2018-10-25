@@ -11,7 +11,7 @@ class Parser{
   }
 
   format(message){
-    if(!message.data && message.data!==false && message.data!==0){
+    if(!message.data && message.data!==false && message.data!==0 && message.data!==''){
         message.data={};
     }
     if(message.data['_maxListeners']){
